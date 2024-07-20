@@ -1,0 +1,137 @@
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#63FFCC80"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="30dp"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Year"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:textSize="30dp"
+                android:id="@+id/editYear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="69dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Population"
+                android:textStyle = "italic" />
+
+            <TextView
+                android:id="@+id/editPopulation"
+                android:textSize="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="69dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+
+                android:text="Population Increase"
+                android:textStyle = "italic"/>
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/editPopulationIncrease"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Workplace Self-sufficiency"
+                android:textSize="20dp"
+                android:textStyle = "italic" />
+
+            <TextView
+                android:textSize="20dp"
+                android:id="@+id/editWorkplaceSelfSufficiency"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="69dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Employment Rate"
+                android:textStyle = "italic" />
+
+            <TextView
+                android:id="@+id/editEmploymentRate"
+                android:layout_width="0dp"
+                android:textSize="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="8dp" />
+        </TableRow>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

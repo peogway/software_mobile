@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/resetImage"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/imageview_click_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/undo" />
+
+    <ImageView
+        android:id="@+id/homeImage"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/imageview_click_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:padding="8dp"
+        android:text="Municipality For Comparing"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#6DFF8A65"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/searchImage"
+        android:layout_width="64dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="328dp"
+        android:layout_marginTop="196dp"
+        android:background="@drawable/imageview_click_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search" />
+
+    <LinearLayout
+        android:background="@drawable/rounded_corners"
+        android:id="@+id/layout2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:backgroundTint="#B2DFDB"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText">
+
+
+        <!-- First Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameWeather1"
+                android:layout_width="125dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/weather"/>
+
+            <TextView
+                android:id="@+id/des1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/windSpeed1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/humidity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <!-- Second Column -->
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="-"
+                android:textSize="30dp"
+                android:textStyle="italic" />
+
+            <!-- This is a blank TextView for alignment; adjust its height as needed -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:padding="8dp" />
+
+
+            <TextView
+                android:id="@+id/signWeather2"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/signWeather3"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+
+
+            <TextView
+                android:id="@+id/signWeather4"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <!-- Third Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameWeather2"
+
+                android:layout_width="125dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                app:srcCompat="@drawable/weather"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/des2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/windSpeed2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/humidity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/suggestionsListView"
+        android:layout_width="413dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="40dp"
+        android:maxHeight="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editMunicipalityName" />
+
+    <EditText
+        android:id="@+id/editMunicipalityName"
+        android:layout_width="278dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/rounded_corners"
+        android:hint="Enter municipality"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.225"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@drawable/rounded_corners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText" />
+
+
+    <Button
+        android:id="@+id/dataCompareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:backgroundTint="#03A9F4"
+        android:text="Statistical Data"
+        android:textColor="#94000000"
+        android:textStyle="bold"
+        android:textSize="29sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionText" />
+
+    <Button
+        android:layout_marginTop="100dp"
+        android:id="@+id/weatherCompareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Data"
+        android:visibility="gone"
+        android:textSize="29sp"
+        android:textColor="#94000000"
+        android:backgroundTint="#F2FFC107"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dataCompareButton" />
+
+
+    <LinearLayout
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#B3E5FC"
+        android:id="@+id/layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:padding="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionText">
+
+
+        <!-- First Column -->
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="125dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Name1"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/population1"
+                android:layout_width="130dp"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/populationIncrease1"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:textStyle = "italic"/>
+
+            <TextView
+                android:id="@+id/wSS1"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/eR1"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp" />
+
+
+        </LinearLayout>
+
+
+        <!-- Second Column -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.087"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/compareButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="64dp"
+                android:backgroundTint="#FF8A65"
+                android:padding="8dp"
+                android:textSize="23dp"
+                android:text="Compare"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+
+            <TextView
+                android:id="@+id/sign1"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:text="Population"
+                android:textStyle="italic"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/sign2"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Population Increase"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:textStyle="italic" />
+            <TextView
+                android:id="@+id/sign3"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:text="Workplace Self-sufficiency"
+                android:layout_weight="1"
+                android:padding="8dp"
+
+                android:textStyle="italic"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/sign4"
+                android:textSize="20sp"
+                android:text="Employment Rate"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textStyle="italic"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+
+
+        </LinearLayout>
+
+        <!-- Third Column -->
+        <LinearLayout
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="125dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="Name2"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_weight="1" />
+
+
+            <TextView
+                android:id="@+id/population2"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/populationIncrease2"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/wSS2"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+            <TextView
+                android:id="@+id/eR2"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="105dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/recentLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/suggestionsListView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent compare"
+            android:textStyle="bold"
+            android:textSize="26sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#A4FF7043"/>
+
+        <ListView
+            android:id="@+id/recentSearchListView"
+            android:layout_width="match_parent"
+            android:layout_height="195dp"
+            android:layout_marginTop="20dp"
+            android:maxHeight="100dp" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

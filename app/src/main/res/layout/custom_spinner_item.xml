@@ -1,0 +1,10 @@
+<TextView
+    android:id="@android:id/text1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:textSize="22sp"
+    android:backgroundTint="#E1BEE7"
+    android:background="@drawable/rounded_corners"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

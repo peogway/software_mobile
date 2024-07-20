@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MunicipalityActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabLayout">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabBasicInfor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-11dp"
+            android:layout_marginBottom="2dp"
+            android:text="Basic Info" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabComparison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comparison" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quiz" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabDataVisualization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Visualization" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewArea"
+        android:layout_below="@+id/tabLayout">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+
+</RelativeLayout>
