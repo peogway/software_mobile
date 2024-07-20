@@ -304,7 +304,10 @@ public class MunicipalityDataRetriever {
             int year = populationData.getYear();
 
             if (!Storage.checkYear) {
-                Storage.years.add(String.valueOf(year));
+                if (year != 2023){
+                    Storage.years.add(String.valueOf(year));
+                }
+
             }
 
             // Find matching data based on the year
